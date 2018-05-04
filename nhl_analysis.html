@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>NHL Regression</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link href=https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.css rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+  <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#collapsedNav" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <a class="navbar-brand" href="index.html">Latitude</a>
+      </div>
+      
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="#collapsedNav">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="temperature.html">Temperature</a></li>
+                <li><a href="humidity.html">Humidity</a></li>
+                <li><a href="cloudiness.html">Cloudiness</a></li>
+                <li><a href="windspeed.html">Wind Speed</a></li>
+              </ul>
+          </li>
+        <li><a href="comparison.html">Comparison</a></li>
+        <li><a href="data.html">Data</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+    
+  <!--Create white background box-->  
+  <div class="container">    
+    <section class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class ="media box white">
+          <h2 class ="media-heading">Comparison: Latitude vs X</h2>
+          
+
+          <!--Temperature thumbnail-->
+          <section class="row">
+            <div class="col-md-4 col-md-offset-2">
+              <div class="thumbnail text-center">
+                <div class="caption">
+                  <h4>vs Temperature</h4>
+                </div>
+                <a href="temperature.html">
+                  <img src="temp_lat.png" class="" alt="Temperature"></a>                    
+              </div>
+            </div>
+            
+            <!--Humidity thumbnail-->
+            <div class="col-md-4">
+              <div class="thumbnail text-center">
+                <div class="caption">
+                  <h4>vs Humidity</h4>
+                </div>
+                <a href="humidity.html">
+                  <img src="humid_lat.png" class="" alt="Humidity"></a>                    
+              </div>
+            </div>
+          </section>
+
+          <!--Cloudiness thumbnail-->
+          <section class="row">
+            <div class="col-md-4 col-md-offset-2">
+              <div class="thumbnail text-center">
+                <div class="caption">
+                  <h4>vs Cloudiness</h4>
+                </div>
+                <a href="cloudiness.html">
+                  <img src="cloud_lat.png" class="" alt="Cloudiness"></a>                    
+              </div>
+            </div>                
+            
+            <!--Wind Speed thumbnail-->
+            <div class="col-md-4">
+              <div class="thumbnail text-center">
+                <div class="caption">
+                  <h4>vs Wind Speed</h4>
+                </div>
+                <a href="windspeed.html">
+                  <img src="wind_lat.png" class="" alt="Windspeed"></a>                    
+              </div>
+            </div>
+          </section>
+
+        </div>
+        </div>
+      </div>
+    </section>
+  </div>  
+
+</body>
+
+</html>
