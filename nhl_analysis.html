@@ -30,14 +30,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-          <a class="navbar-brand" href="index.html">Latitude</a>
+          <!--a class="navbar-brand" href="index.html">Latitude</a-->
       </div>
       
   
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="#collapsedNav">
         <ul class="nav navbar-nav navbar-right">
-          <li class="dropdown">
+          <!--li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="temperature.html">Temperature</a></li>
@@ -47,7 +47,7 @@
               </ul>
           </li>
         <li><a href="comparison.html">Comparison</a></li>
-        <li><a href="data.html">Data</a></li>
+        <li><a href="data.html">Data</a></li-->
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -60,56 +60,85 @@
     <section class="row">
       <div class="col-md-10 col-md-offset-1">
         <div class ="media box white">
-          <h2 class ="media-heading">Comparison: Latitude vs X</h2>
+          <h3 class ="media-heading">NHL Playoff Predictor: Data</h3>
+          <p>We obtained NHL team data by scraping the website 'Puck On Net' using Python, 
+            then used Pandas to organize the data before writing the output as csv files. 
+            We downloaded 82-game data for each NHL team for the seasons ending in 2016, 
+            2017, and 2018. Data included the “advanced stat” measures of Fenwick and Corsi, 
+            as well as the component data of goals, shots on goal, missed shots, and blocked shots.</p> 
+            
+          <p>We also took information from the NHL's official website.</p>  
+
+          <p>For the model, we limited the data to cumulative statistics at the 20-, 40-, 60-, 
+            and 82-game marks for each season. For the prediction, we only used cumulative game 
+            results through 60 games.</p>
           
-
-          <!--Temperature thumbnail-->
+          <div>
+            <h3 class ="media-heading">NHL Playoff Predictor: Analysis</h3>
+          </div>
+          <!--Goal Differential Close Prediction -->
           <section class="row">
-            <div class="col-md-4 col-md-offset-2">
-              <div class="thumbnail text-center">
+            <div class="col-md-5 col-md-offset-1">
+              
                 <div class="caption">
-                  <h4>vs Temperature</h4>
+                  <h4>Goal Differential Close</h4>
                 </div>
-                <a href="temperature.html">
-                  <img src="temp_lat.png" class="" alt="Temperature"></a>                    
-              </div>
+                <!--a href="temperature.html"></a-->
+                  <img src="goal_diff_close.png" class="" alt="Goal Differential Close">                    
+              
             </div>
             
-            <!--Humidity thumbnail-->
+            <!--Special Teams Combined -->
             <div class="col-md-4">
-              <div class="thumbnail text-center">
+              
                 <div class="caption">
-                  <h4>vs Humidity</h4>
+                  <h4>Special Teams Combined</h4>
                 </div>
-                <a href="humidity.html">
-                  <img src="humid_lat.png" class="" alt="Humidity"></a>                    
-              </div>
+                  <img src="special_teams.png" class="" alt="Special Teams Combined">                    
             </div>
+            
           </section>
 
-          <!--Cloudiness thumbnail-->
+          <!--Fenwick Close Prediction -->
           <section class="row">
-            <div class="col-md-4 col-md-offset-2">
-              <div class="thumbnail text-center">
+            <div class="col-md-5 col-md-offset-1">
+              
                 <div class="caption">
-                  <h4>vs Cloudiness</h4>
+                  <h4>Fenwick Close</h4>
                 </div>
-                <a href="cloudiness.html">
-                  <img src="cloud_lat.png" class="" alt="Cloudiness"></a>                    
-              </div>
-            </div>                
+                <!--a href="temperature.html"></a-->
+                  <img src="fenwick_close.png" class="" alt="Fenwick Close">                    
+            </div>
             
-            <!--Wind Speed thumbnail-->
+            <!--Fenwick Close Event Differential -->
             <div class="col-md-4">
-              <div class="thumbnail text-center">
+              
                 <div class="caption">
-                  <h4>vs Wind Speed</h4>
+                  <h4>Fenwick Close Event Differential</h4>
                 </div>
-                <a href="windspeed.html">
-                  <img src="wind_lat.png" class="" alt="Windspeed"></a>                    
-              </div>
+                  <img src="fenwick_event_diff.png" class="" alt="Fenwick Event Diff.">                    
             </div>
           </section>
+              
+          <!--Fenwick Close Prediction -->
+          <section class="row">
+            <div class="col-md-5 col-md-offset-1">
+              
+                <div class="caption">
+                  <h4>Corsi Close</h4>
+                </div>
+                <!--a href="temperature.html"></a-->
+                  <img src="corsi_close.png" class="" alt="Corsi Close">                    
+            </div>
+                      
+            <!--Face Off Win Percentage -->
+            <div class="col-md-4">
+              
+                <div class="caption">
+                  <h4>Face-Off Win Percentage</h4>
+                </div>
+                  <img src="face_offs.png" class="" alt="Face-Off Win %">                    
+              </div>
 
         </div>
         </div>

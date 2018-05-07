@@ -1,13 +1,16 @@
 body {
     background-color: rgb(216,216,226);
-    font-size: 16px;
+    font-size: 15px;
     }
 hr {
     height: 4px;
     margin-left: 15px;
     margin-bottom:-3px;
   }
- 
+head3 {
+    margin-top: 8px;
+    margin-bottom: 6px;
+} 
 .box {
     min-height: 50px;
     padding: 10px;
@@ -22,7 +25,7 @@ hr {
     background: white;
   }
 
-head2 {
+h4 {
     color: rgb(8, 88, 206);
     } 
 img.smallLandscape {
